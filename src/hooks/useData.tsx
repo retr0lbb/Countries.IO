@@ -1,6 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 
+
+interface CurrencyProps{
+    [key: string]: {name: string, simbol: string}
+}
+interface LanguagesProps{
+    [key: string]: string
+}
 export interface CountryData{
     altSpellings: string[],
     capital: string[],
@@ -17,9 +24,9 @@ export interface CountryData{
     name: {
         common: string
     },
-    currencies: {
-        name: string
-    }
+    currencies: CurrencyProps,
+    population: number,
+    languages: LanguagesProps
 }
 
 export function useData(){
