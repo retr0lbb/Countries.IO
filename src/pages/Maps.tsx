@@ -40,7 +40,7 @@ const Maps: React.FC = () => {
                     setCountryName(e.target.value)
                 }} data={data}/>
             </div>
-        <LoadScript googleMapsApiKey="AIzaSyC6hl8zQL9jrtsvoU5NAqMDRFzXAfONacc">
+        <LoadScript googleMapsApiKey={`${key}`}>
             <GoogleMap
                 mapContainerStyle={{ width: '100%', height: '100%' }}
                 center={center}
