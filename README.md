@@ -47,7 +47,7 @@ VITE_REACT_API_KEY=SuaChaveDeAPIAqui
 2. Certifique-se de configurar corretamente suas variáveis de ambiente no arquivo `.env`.
 
 caso não tenha uma chave api do google maps uma versão desse projeto estara disponivel online
-com esse link
+com esse link [web🌐](https://countries-io-pi.vercel.app)
 
 ## Execução
 
