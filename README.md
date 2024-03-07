@@ -1,30 +1,88 @@
-# React + TypeScript + Vite
+# Como usar Esta Aplicação Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este guia rápido explica como configurar e executar a aplicação Vite React.
 
-Currently, two official plugins are available:
+## Pré-requisitos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Certifique-se de ter o Node.js instalado em sua máquina. Você pode baixá-lo em [nodejs.org](https://nodejs.org/).
 
-## Expanding the ESLint configuration
+## Instalação
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone o repositório para o seu ambiente local:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/retr0lbb/Countries.IO.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navegue até o diretório do projeto:
+
+```bash
+cd sua-pasta-criada
+```
+
+3. Instale as dependências do projeto usando npm ou yarn:
+
+Com npm:
+
+```bash
+npm install
+```
+
+Com Yarn:
+
+```bash
+yarn
+```
+
+## Configuração
+
+1. Crie um arquivo `.env` na raiz do seu projeto e defina suas variáveis de ambiente, se necessário.
+
+Exemplo de arquivo `.env`:
+
+```
+VITE_REACT_API_KEY=SuaChaveDeAPIAqui
+```
+
+2. Certifique-se de configurar corretamente suas variáveis de ambiente no arquivo `.env`.
+
+caso não tenha uma chave api do google maps uma versão desse projeto estara disponivel online
+com esse link
+
+## Execução
+
+Para iniciar o servidor de desenvolvimento, execute o seguinte comando:
+
+Com npm:
+
+```bash
+npm run dev
+```
+
+Com Yarn:
+
+```bash
+yarn dev
+```
+
+Isso iniciará o servidor de desenvolvimento em [http://localhost:5173](http://localhost:5173).
+
+## Construção para Produção
+
+Para construir o aplicativo para produção, execute o seguinte comando:
+
+Com npm:
+
+```bash
+npm run build
+```
+
+Com Yarn:
+
+```bash
+yarn build
+```
+
+Este comando cria uma versão otimizada do aplicativo na pasta `dist` pronta para implantação.
+
+-----
